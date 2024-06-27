@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" content="width=device-width, initial-scale  = 1, user-scalable= yes">
+    <link rel="stylesheet" href="stylevo.css">
+    <title>
+        fruitgame
+    </title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="score">
+            Score:<span id="scoreValue"></span>
+        </div>
+        <div id="life"></div>
+        
+        <div id="fruitBox">
+        <img id="fruit1" class="fruit">
+        <img id="fruit2" class="fruit">
+        <img id="bomb">
+        </div>
+        
+
+        <div id="instruction">CUT THE FRUITS</div>
+        
+        <div id="startReset">STaRT</div>
+        
+        <div id="gameover">
+            <p>GAME OVER</p>
+            <p>Your score is <span id="scoreEnd"></span></p>
+        </div>
+        
+    </div>
+    <audio id = "slicesound">
+        <source src = "audio/cut.mp3">
+        <source src = "audio/cut.ogg">
+    </audio>
+    <audio id = "bombsound">
+        <source src = "audio/bombsound.mp3">
+        <source src = "audio/bombsound.ogg">
+    </audio>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+
+    <script src="fruitgamevo.js">
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+html{
+    height:100%;
+    background: radial-gradient(circle, white, grey);
+}
+#container {
+    height: 520px;
+    width:750px;
+    margin : 20px auto;
+    background:#b73838 ;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 1px #854646;
+    -webkit-box-shadow: 10px 10px 10px 1px #854646;
+    -o-box-shadow: 10px 10px 10px 1px #854646;
+    -moz-box-shadow: 10px 10px 10px 1px #854646;
+    -ms-box-shadow: 10px 10px 10px 1px #854646;
+    position: relative;
+    
+}
+
+#score {
+    background-color: azure;
+    color:#044c76;
+    padding: 10px;
+    position: absolute;
+    left: 700px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #9bd2f2;
+    -webkit-box-shadow: 2px 2px 2px #9bd2f2;
+    -o-box-shadow: 2px 2px 2px #9bd2f2;
+    -moz-box-shadow: 2px 2px 2px #9bd2f2;
+    -ms-box-shadow: 2px 2px 2px #9bd2f2;
+    font-family: "impact";
+    -webkit-font-family: "impact";
+    -moz-font-family: "impact";
+    -o-font-family: "impact";
+    -ms-font-family: "impact";
+}
+#life {
+    background-color: azure;
+    color:#044c76;
+    padding: 4px;
+    position: absolute;
+    left: 50px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #9bd2f2;
+    -webkit-box-shadow: 2px 2px 2px #9bd2f2;
+    -o-box-shadow: 2px 2px 2px #9bd2f2;
+    -moz-box-shadow: 2px 2px 2px #9bd2f2;
+    -ms-box-shadow: 2px 2px 2px #9bd2f2;
+    font-family: "impact";
+    -webkit-font-family: "impact";
+    -moz-font-family: "impact";
+    -o-font-family: "impact";
+    -ms-font-family: "impact";
+    display: none;
+}
+
+
+
+#fruitBox {
+    background-color: white;
+/*    position: absolute;*/
+    left: 70px;
+    top: 50px;
+    width: 650px;
+    height: 300px;
+/*    margin: 50px auto 10px auto;*/
+    box-shadow: 2px 2px 1px #ddca4f;
+    border-radius: 3px;
+    font-family: "impact";
+    --webkit-- font-family: "impact";
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    cursor:copy ;
+}
+
+#instruction {
+    position: relative;
+    width: 450px;
+    height: 35px;
+    background-color: beige;
+    margin: 60px auto 10px auto;
+    border-radius: 3px;
+    box-shadow: 1px;
+    -webkit-box-shadow: 1px;
+    -o-box-shadow: 1px;
+    -moz-box-shadow: 1px;
+    -ms-box-shadow: 1px;
+    font-size: 20px;
+    font-family: "impact";
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+
+.box{
+    width: 85px;
+    height: 85px;
+    background-color:azure;
+    float: left;
+    margin-left: 36px;
+    border-radius: 4px;
+    cursor:pointer;
+    box-shadow: 0px 3px 1px pink;
+    -webkit-box-shadow: 0px 3px 1px pink;
+-o-box-shadow: 0px 3px 1px pink;
+-moz-box-shadow: 0px 3px 1px pink;
+-ms-box-shadow: 0px 3px 1px pink;
+    text-align: center;
+    line-height: 85px;
+    font-size:30px;
+    font-family: "impact";
+    -webkit-font-family: "impact";
+    -moz-font-family: "impact";
+    -o-font-family: "impact";
+    -ms-font-family: "impact";
+    position: relative;
+    transition: all 0.2;
+    -webkit-transition: all 0.2;
+    -moz-transition: all 0.2;
+    -o-transition: all 0.2;
+    -ms-transition: all 0.2;
+}
+.box:hover{
+    background-color: burlywood;
+    color: aliceblue;
+}
+#startReset:hover{
+    background-color: #cbf381;
+    color: darkgreen;
+    box-shadow: 0px 3px 1px #8cce11;
+    -webkit-box-shadow: 0px 3px 1px #8cce11;
+-o-box-shadow: 0px 3px 1px #8cce11;
+-moz-box-shadow: 0px 3px 1px #8cce11;
+-ms-box-shadow: 0px 3px 1px #8cce11;
+}
+.box:active, #startReset:active{
+    box-shadow:none;
+    -webkit-box-shadow:none;
+-o-box-shadow:none;
+-moz-box-shadow:none;
+-ms-box-shadow:none;
+    top:3px;
+}
+#box1{
+    margin-left: 0px;
+}
+#box4{
+    margin-left: 38px;
+}
+
+
+/*
+-webkit-
+-o-
+-moz-
+-ms-
+*/
+
+#startReset {
+    width: 85px;
+    background-color:rgba(255,255,255,0.5);
+    margin: 0 auto;
+    padding: 0 10px;
+    border-radius: 4px;
+    cursor:pointer;
+    box-shadow: 0px 3px 1px pink;
+    -webkit-box-shadow: 0px 3px 1px pink;
+-o-box-shadow: 0px 3px 1px pink;
+-moz-box-shadow: 0px 3px 1px pink;
+-ms-box-shadow: 0px 3px 1px pink;
+    text-align: center;
+    font-size:20px;
+    font-family: "impact";
+    -webkit-font-family: "impact";
+    -moz-font-family: "impact";
+    -o-font-family: "impact";
+    -ms-font-family: "impact";
+    position: relative;
+    transition: all 0.2;
+    -webkit-transition: all 0.2;
+    -moz-transition: all 0.2;
+    -o-transition: all 0.2;
+    -ms-transition: all 0.2;
+}
+
+
+
+
+#gameover {
+    height: 300px;
+    width: 500px;
+    background-color: coral;
+    position: absolute;
+    bottom: 150px;
+    left: 145px;
+    color: antiquewhite;
+    font-family: "impact";
+    -webkit-font-family: "impact";
+    -moz-font-family: "impact";
+    -o-font-family: "impact";
+    -ms-font-family: "impact";
+    font-size: 40px;
+    text-align: center;
+    line-height: 80px;
+    z-index: 2;
+    display:none;
+}
+
+.heart{
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+.fruit{
+    display: none;
+    position: absolute;
+}

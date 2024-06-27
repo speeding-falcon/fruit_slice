@@ -1,0 +1,232 @@
+html{
+    height:100%;
+    background: radial-gradient(circle, white, grey);
+}
+#container {
+    height: 420px;
+    width:550px;
+    margin : 100px auto;
+    background:#b73838 ;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 1px #854646;
+    -webkit-box-shadow: 10px 10px 10px 1px #854646;
+    -o-box-shadow: 10px 10px 10px 1px #854646;
+    -moz-box-shadow: 10px 10px 10px 1px #854646;
+    -ms-box-shadow: 10px 10px 10px 1px #854646;
+    position: relative;
+    cursor: crosshair;
+}
+
+#score {
+    background-color: azure;
+    color:#044c76;
+    padding: 10px;
+    position: absolute;
+    left: 500px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #9bd2f2;
+    -webkit-box-shadow: 2px 2px 2px #9bd2f2;
+    -o-box-shadow: 2px 2px 2px #9bd2f2;
+    -moz-box-shadow: 2px 2px 2px #9bd2f2;
+    -ms-box-shadow: 2px 2px 2px #9bd2f2;
+    font-family: "impact";
+    -webkit-font-family: "impact";
+    -moz-font-family: "impact";
+    -o-font-family: "impact";
+    -ms-font-family: "impact";
+}
+
+#correct {
+    position: absolute;
+    left: 250px;
+    background-color: #48e500;
+    color: white;
+    padding: 10px;
+    display: none;
+}
+
+#wrong {
+    position: absolute;
+    left: 250px;
+    background-color:red;
+    color: white;
+    padding: 10px;
+    display: none;
+}
+
+#questionBox {
+    background-color: bisque;
+/*    position: absolute;*/
+    left: 70px;
+    top: 50px;
+    width: 450px;
+    height: 100px;
+    margin: 50px auto 10px auto;
+    box-shadow: 2px 2px 1px #ddca4f;
+    border-radius: 3px;
+    font-family: "impact";
+    --webkit-- font-family: "impact";
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    cursor: progress;
+}
+
+#instruction {
+    width: 450px;
+    height: 35px;
+    background-color: beige;
+    margin: 10px auto;
+    border-radius: 3px;
+    box-shadow: 1px;
+    -webkit-box-shadow: 1px;
+    -o-box-shadow: 1px;
+    -moz-box-shadow: 1px;
+    -ms-box-shadow: 1px;
+    font-size: 20px;
+    font-family: "impact";
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+#choices{
+    width: 450px;
+    height: 100px;
+/*    background-color: black;*/
+    margin: 5px auto;
+}
+
+.box{
+    width: 85px;
+    height: 85px;
+    background-color:azure;
+    float: left;
+    margin-left: 36px;
+    border-radius: 4px;
+    cursor:pointer;
+    box-shadow: 0px 3px 1px pink;
+    -webkit-box-shadow: 0px 3px 1px pink;
+-o-box-shadow: 0px 3px 1px pink;
+-moz-box-shadow: 0px 3px 1px pink;
+-ms-box-shadow: 0px 3px 1px pink;
+    text-align: center;
+    line-height: 85px;
+    font-size:30px;
+    font-family: "impact";
+    -webkit-font-family: "impact";
+    -moz-font-family: "impact";
+    -o-font-family: "impact";
+    -ms-font-family: "impact";
+    position: relative;
+    transition: all 0.2;
+    -webkit-transition: all 0.2;
+    -moz-transition: all 0.2;
+    -o-transition: all 0.2;
+    -ms-transition: all 0.2;
+}
+.box:hover{
+    background-color: burlywood;
+    color: aliceblue;
+}
+#startReset:hover{
+    background-color: #cbf381;
+    color: darkgreen;
+    box-shadow: 0px 3px 1px #8cce11;
+    -webkit-box-shadow: 0px 3px 1px #8cce11;
+-o-box-shadow: 0px 3px 1px #8cce11;
+-moz-box-shadow: 0px 3px 1px #8cce11;
+-ms-box-shadow: 0px 3px 1px #8cce11;
+}
+.box:active, #startReset:active{
+    box-shadow:none;
+    -webkit-box-shadow:none;
+-o-box-shadow:none;
+-moz-box-shadow:none;
+-ms-box-shadow:none;
+    top:3px;
+}
+#box1{
+    margin-left: 0px;
+}
+#box4{
+    margin-left: 38px;
+}
+
+
+/*
+-webkit-
+-o-
+-moz-
+-ms-
+*/
+
+#startReset {
+    width: 85px;
+    background-color:rgba(255,255,255,0.5);
+    margin: 0 auto;
+    padding: 0 10px;
+    border-radius: 4px;
+    cursor:pointer;
+    box-shadow: 0px 3px 1px pink;
+    -webkit-box-shadow: 0px 3px 1px pink;
+-o-box-shadow: 0px 3px 1px pink;
+-moz-box-shadow: 0px 3px 1px pink;
+-ms-box-shadow: 0px 3px 1px pink;
+    text-align: center;
+    font-size:20px;
+    font-family: "impact";
+    -webkit-font-family: "impact";
+    -moz-font-family: "impact";
+    -o-font-family: "impact";
+    -ms-font-family: "impact";
+    position: relative;
+    transition: all 0.2;
+    -webkit-transition: all 0.2;
+    -moz-transition: all 0.2;
+    -o-transition: all 0.2;
+    -ms-transition: all 0.2;
+}
+
+#timer {
+   position: absolute;
+    width: 160px;
+    padding: 3px;
+    top: 418px;
+    left: 410px;
+    background-color:#c5d996;
+    font-family: "impact";
+    -webkit-font-family: "impact";
+    -moz-font-family: "impact";
+    -o-font-family: "impact";
+    -ms-font-family: "impact";
+    font-size: 18px;
+    border-radius: 5px;
+/*    visibility: hidden;*/
+/*    display: none;*/
+    z-index: 3;
+}
+
+
+
+#gameover {
+    height: 200px;
+    width: 500px;
+    background-color: coral;
+    position: absolute;
+    bottom: 150px;
+    left: 50px;
+    color: antiquewhite;
+    font-family: "impact";
+    -webkit-font-family: "impact";
+    -moz-font-family: "impact";
+    -o-font-family: "impact";
+    -ms-font-family: "impact";
+    font-size: 40px;
+    text-align: center;
+    line-height: 40px;
+    z-index: 2;
+    display: none;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" content="width=device-width, initial-scale  = 1, user-scalable= yes">
+    <link rel="stylesheet" href="stylem.css">
+    <title>
+        mathgame
+    </title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="score">
+            Score:<span id="scoreValue"></span>
+        </div>
+        <div id="life"></div>
+        
+        <div id="fruitBox">
+        <img id="fruit1" class="fruit">
+        </div>
+        <div id="instruction">CUT THE FRUITS</div>
+        
+        <div id="startReset">STaRT</div>
+        <div id="timer">Time Remaining: <span id="timeValue"></span>s</div>
+        <div id="gameover">
+            <p>GAME OVER</p>
+            <p>Your score is <span id="scoreEnd"></span></p>
+        </div>
+        
+    </div>
+    <audio id = "slicesound">
+        <source src = "audio/cut.mp3">
+        <source src = "audio/cut.ogg">
+    </audio>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+
+    <script src="fruitgame.js">
+    </script>
+
+</body>
+</html>

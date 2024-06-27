@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" content="width=device-width, initial-scale  = 1, user-scalable= yes">
+    <link rel="stylesheet" href="style.css">
+    <title>
+        mathgame
+    </title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="score">
+            Score:<span id="scoreValue"></span>
+        </div>
+        <div id="correct">Correct</div>
+        <div id="wrong">Try Again</div>
+        <div id="questionBox">???</div>
+        <div id="instruction">Click on the Correct Answer</div>
+        <div id="choices">
+            <div id="box1" class="box" onclick="verify()"></div>
+            <div id="box2" class="box" onclick="verify()"></div>
+            <div id="box3" class="box" onclick="verify()"></div>
+            <div id="box4" class="box" onclick="verify()"></div>
+        </div>
+        <div id="startReset" onclick="start()">STaRT</div>
+        <div id="timer">Time Remaining: <span id="timeValue"></span>s</div>
+        <div id="gameover">
+            <p>GAME OVER</p>
+            <p>Your score is <span id="scoreEnd"></span></p>
+        </div>
+        
+    </div>
+    
+
+    <script src="mathgame.js">
+    </script>
+
+</body>
+</html>
